@@ -1,0 +1,80 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "diagnosis"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount",
+            "config": "{\"name\": \"example_count\"}"
+          }
+        ],
+        "modelNames": [
+          ""
+        ],
+        "exampleWeights": {
+          "unweighted": true
+        }
+      },
+      {
+        "metrics": [
+          {
+            "className": "WeightedExampleCount",
+            "config": "{\"name\": \"weighted_example_count\"}"
+          }
+        ],
+        "modelNames": [
+          ""
+        ],
+        "exampleWeights": {
+          "weighted": true
+        }
+      },
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount",
+            "config": "{\"name\": \"example_count\"}"
+          },
+          {
+            "className": "BinaryCrossentropy",
+            "module": "keras.src.metrics.probabilistic_metrics",
+            "config": "{\"dtype\": \"float32\", \"from_logits\": false, \"label_smoothing\": 0, \"name\": \"binary_crossentropy\"}"
+          },
+          {
+            "className": "BinaryAccuracy",
+            "config": "{\"name\": \"accuracy\", \"threshold\": 0.5}"
+          },
+          {
+            "className": "Precision",
+            "config": "{\"class_id\": null, \"name\": \"precision\", \"thresholds\": [0.5], \"top_k\": null}"
+          },
+          {
+            "className": "Recall",
+            "config": "{\"class_id\": null, \"name\": \"recall\", \"thresholds\": [0.5], \"top_k\": null}"
+          },
+          {
+            "className": "ConfusionMatrixPlot",
+            "config": "{\"name\": \"confusion_matrix_plot\", \"num_thresholds\": 1000}"
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.46.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "pipelines/mkavaldo-pipeline/Trainer/model/13/Format-Serving"
+  }
+}
