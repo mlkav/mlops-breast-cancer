@@ -79,6 +79,14 @@ Dengan melakukannya dilocal untuk memastikan bahwa model dapat berjalan dengan b
 docker build -t breast-prediction-tf-serving .
 docker run -p 8080:8501 breast-prediction-tf-serving
 ```
+Copy dan paste url berikut:
+```
+localhost:8080/v1/models/bc-model/metadata
+```
+Jika berhasil akan tampil seperti ini:
+
+<img width="572" alt="mkavaldo-metadata-local" src="https://github.com/user-attachments/assets/966da9ee-c526-4a36-bd31-f73463425a7f">
+
 
 Jika pada tahap pembuatan di local sudah berhasil dapat langsung dilakukan uji coba pada sub Prediction dengan menggunakan file `testing.ipynb`.
 
@@ -105,12 +113,17 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/metadata
     ```
     Jika berhasil akan muncul seperti ini:
+   
+   ![mkavaldo-metadata](https://github.com/user-attachments/assets/2a62b086-702c-41e9-a5e9-1f67652d9030)
 
-2. Monitoring
+
+3. Monitoring
     ```
     https://mlops-bc-mkavaldo.up.railway.app/monitoring/prometheus/metrics
     ```
     Jika berhasil akan muncul seperti ini:
+
+   ![mkavaldo-metrics](https://github.com/user-attachments/assets/2e2b17d4-8d6b-4d34-8601-301ead46b250)
 
 
 ### Monitoring in Prometheus
@@ -124,6 +137,8 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     ```
     http://localhost:9090/
     ```
+    ![mkavaldo-prometheus](https://github.com/user-attachments/assets/7b92c92d-f995-49a7-99d1-b7117b7d99de)
+
 
 ### Monitoring Grafana
 1. Pastikan sudah dilakukan instalasi pada tahap sebelumnya, _copy paste_ link berikut dan buka pada browser.
@@ -143,6 +158,11 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
 4. Pada bagian **HTTP Method** pilih method **GET**, karena kita akan mengambil data dan menvisualisasikannya pada dashboard Grafana.
 
 5. Klik tombol **Save & Test** dan memilih metrik yang akan ditampilkan.
+6. Hasil tampilan pada Grafana.
+
+   <img width="960" alt="mkavaldo-grafana" src="https://github.com/user-attachments/assets/8ccbbcc9-82e1-4593-a148-46aa3b187fc0">
+
+<!-- ![mkavaldo-grafana](https://github.com/user-attachments/assets/99826375-6762-414f-aa32-b8161e98d14e)-->
 
 
 
