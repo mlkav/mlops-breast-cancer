@@ -34,6 +34,7 @@ Untuk melakukan deployment model yang telah dibuat yaitu dengan menggunakan Rail
 1. Dockerfile
     ```docker
     # Dockerfile
+    
     FROM tensorflow/serving:latest
     
     COPY ./output/serving_model /models/breast-model
@@ -55,7 +56,6 @@ Untuk melakukan deployment model yang telah dibuat yaitu dengan menggunakan Rail
     # monitoring/Dockerfile
 
     FROM prom/prometheus:latest
-
     COPY prometheus.yml /etc/prometheus/prometheus.yml
 
     ```
@@ -93,7 +93,8 @@ Jika pada tahap pembuatan di local sudah berhasil dapat langsung dilakukan uji c
     railway up # Railway akan otomatif membaca Dockerfile
     ```
 2. Buka halaman project -> Setting, melakukan generate domain dan didapatkan url:
-    ```url
+   
+    ```bash
     https://mlops-bc-mkavaldo.up.railway.app/
     ``
 
@@ -101,13 +102,13 @@ Jika pada tahap pembuatan di local sudah berhasil dapat langsung dilakukan uji c
 
 Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
 1. Metadata Model
-    ```url
+    ```
     https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/metadata
     ```
     Jika berhasil akan muncul seperti ini:
 
 2. Monitoring
-    ```url
+    ```
     https://mlops-bc-mkavaldo.up.railway.app/monitoring/prometheus/metrics
     ```
     Jika berhasil akan muncul seperti ini:
@@ -121,13 +122,13 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     docker run -p  bc-monitoring
     ```
 2. Salin link berikut ke browser:
-    ```url
+    ```
     http://localhost:9090/
     ```
 
 ### Monitoring Grafana
 1. Pastikan sudah dilakukan instalasi pada tahap sebelumnya, _copy paste_ link berikut dan buka pada browser.
-    ```url
+    ```
     http://localhost:3000/
     ```
 2. Masukkan username dan password defaultnya, yaitu:
@@ -136,7 +137,7 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     password: admin
     ```
 3. Membuat _datasource_ baru dan pilih prometheus sebagai sumbernya serta pada **_field connection_** masukkan:
-    ```url
+    ```
     http://localhost:9090
     ```
 
@@ -151,10 +152,10 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
 Melakukan prediksi pada data sample dengan menentukan index tertentu.
 
 - Buka file *testing.ipynb dan lakukan run cell apakah model tersedia pada endpoint.
-    ```url
+    ```
     http://localhost:8080/v1/models/breast-cancer-model/
     ```
-    ```url
+    ```
     https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/
     ```
 - Lakukan run hingga cell akhir.
