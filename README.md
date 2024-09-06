@@ -93,10 +93,9 @@ Jika pada tahap pembuatan di local sudah berhasil dapat langsung dilakukan uji c
     railway up # Railway akan otomatif membaca Dockerfile
     ```
 2. Buka halaman project -> Setting, melakukan generate domain dan didapatkan url:
-   
-    ```bash
+    ```
     https://mlops-bc-mkavaldo.up.railway.app/
-    ``
+    ```
 
 ### Metadata on Railway
 
