@@ -1,7 +1,6 @@
 *Created: 05/09/2024*
 
-[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://maulanakavaldo.github.io/mlops-breast-cancer/notebook.html)
-
+[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](/mlops-breast-cancer/notebook.html)
 
 ___
 
@@ -11,7 +10,6 @@ Nama : Maulana Kavaldo
 
 UsernameDicoding : [mkavaldo](https://www.dicoding.com/users/mkavaldo/academies)
 
-<!-- ![breast-cancer](https://github.com/user-attachments/assets/0222b17b-7351-424e-8995-a04a73a58087) -->
 ![breast-cancer-app](https://github.com/user-attachments/assets/a8fe1e69-dd4e-427c-a41b-aa68125b855f)
 
 |         | Deskripsi|
@@ -118,7 +116,6 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     ```
     Jika berhasil akan muncul seperti ini:
    
-   <!-- ![mkavaldo-metadata](https://github.com/user-attachments/assets/2a62b086-702c-41e9-a5e9-1f67652d9030) -->
    <img width="572" alt="mkavaldo-metadata" src="https://github.com/user-attachments/assets/2a62b086-702c-41e9-a5e9-1f67652d9030">
 
 
@@ -128,7 +125,6 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     ```
     Jika berhasil akan muncul seperti ini:
 
-   <!-- ![mkavaldo-metrics](https://github.com/user-attachments/assets/2e2b17d4-8d6b-4d34-8601-301ead46b250) -->
    <img width="572" alt="mkavaldo-metrics" src="https://github.com/user-attachments/assets/2e2b17d4-8d6b-4d34-8601-301ead46b250">
 
 
@@ -178,22 +174,14 @@ Melakukan prediksi pada data sample dengan menentukan index tertentu.
 
 - Buka file *testing.ipynb dan lakukan run cell apakah model tersedia pada endpoint.
     ```
-    http://localhost:8080/v1/models/breast-cancer-model/
+    http://localhost:8080/v1/models/bc-model
     ```
     ```
-    https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/
+    https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model
     ```
 - Lakukan run hingga cell akhir.
 - Ubah index data sesuai kebutuhan untuk melihat hasil prediksi.
 - Pada file ini juga bisa melakukan _request_ dengan jumlah tertentu agar dapat terlihat perbedaan pada grafik monitoring.
-
-
-<!-- ### Breast Cancer Prediction Web App 
-
-Akses Web Aplication pada link berikut: [Breast Prediction App](https://bc-prediction-app-mkavaldo.up.railway.app/)
-
-![breast-cancer-app](https://github.com/user-attachments/assets/a8fe1e69-dd4e-427c-a41b-aa68125b855f) -->
-
 
 
 # Referensi:
@@ -205,8 +193,3 @@ Akses Web Aplication pada link berikut: [Breast Prediction App](https://bc-predi
 [^3]: Union for International Cancer Control. "Universal Health Coverage and Cancer Prevention". 2023. Diakses pada 06 September 2024 melalui [UICC: Breast Cancer](https://www.uicc.org/news/universal-health-coverage-and-cancer-prevention).
 
 [^4]: National Cancer Institute. "Breast Cancer Treatment (PDQ®)–Health Professional Version". 2024. Diakses pada 06 September 2024 melalui [NCI: Breast Cancer](https://www.cancer.gov/types/breast/hp/breast-treatment-pdq). 
-
-
-
-<!-- https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/metadata
-https://mlops-bc-mkavaldo.up.railway.app/monitoring/prometheus/metrics -->
