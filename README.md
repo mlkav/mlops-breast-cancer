@@ -1,4 +1,8 @@
 *Created: 05/09/2024*
+
+[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://maulanakavaldo.github.io/mlops-breast-cancer/notebook.html)
+
+
 ___
 
 # Submission 2: Breast Cancer Prediction (MLOPS)
@@ -18,16 +22,16 @@ UsernameDicoding : [mkavaldo](https://www.dicoding.com/users/mkavaldo/academies)
 |Metode pengolahan| Dataset Breast Cancer terdiri dari 31 kolom, di mana 30 di antaranya digunakan untuk klasifikasi dan satu sebagai label klasifikasi (diagnosis). Semua fitur bersifat numerikal: radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave_points_mean, symmetry_mean, fractal_dimension_mean, dan fitur lainnya memiliki tipe data float64, sedangkan fitur label diagnosis memiliki tipe data int64. Data dibagi menjadi 80% untuk pelatihan dan 20% untuk evaluasi. Proses transformasi data melibatkan normalisasi untuk fitur numerikal menggunakan z-score. Normalisasi ini dilakukan untuk memastikan bahwa semua fitur memiliki skala yang seragam, dengan rata-rata 0 dan deviasi standar 1, sehingga membantu model dalam proses pelatihan dengan mengurangi bias yang disebabkan oleh perbedaan skala antar fitur.
 |Arsitektur model| Arsitektur model dimulai dengan mengintegrasikan input fitur yang kemudian diproses melalui beberapa lapisan dense. Model ini terdiri dari empat lapisan dense dengan jumlah unit 256, 128, 64, dan 32, di mana setiap lapisan menggunakan fungsi aktivasi ReLU, dilengkapi dengan Batch Normalization serta Dropout dengan rate 0.3. Lapisan output adalah dense dengan 1 unit yang menggunakan aktivasi sigmoid untuk klasifikasi biner. Model dikompilasi menggunakan optimizer Adam dengan learning rate 0.0001, loss binary crossentropy, dan metrik akurasi, yang bertujuan untuk mengklasifikasikan tumor sebagai "malignant" (ganas) atau "benign" (jinak).
 | Metrik evaluasi  |  Metrik evaluasi yang digunakan dalam proyek ini meliputi AUC, Precision, Recall, ExampleCount, dan BinaryAccuracy. ExampleCount digunakan untuk menghitung jumlah contoh yang dievaluasi, sementara BinaryCrossentropy menghitung kerugian model pada tugas klasifikasi biner. BinaryAccuracy menilai tingkat akurasi prediksi model, sedangkan Precision dan Recall mengukur ketepatan dan sensitivitas model dalam mendeteksi kasus positif dengan ambang batas 0.5. Evaluasi ini dirancang untuk menilai performa model secara menyeluruh guna memastikan keefektifannya dalam menentukan apakah tumor bersifat ganas atau jinak.|
-| Performa model  |  Hasil evaluasi model setelah tuning menunjukkan akurasi 72.8% pada pelatihan dan 63.7% pada data validasi. Loss yang diperoleh adalah 0.53 selama pelatihan dan 0.63 pada validasi. Model menunjukkan kinerja yang cukup baik, namun masih terdapat gap yang cukup jauh antara pelatihan dan validasi sehingga masih perlu eksperiment lebih lanjut.|
-| Opsi Deployment  | Menggunakan railway. Metadata model dapat diakses melalui [Metadata Model](https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/metadata) |
-| Web App | Menggunkan Flask dan dideploy menggunakan railwal. Aplikasi dapat di akses melalui [Breast Prediction App](https://bc-prediction-app-mkavaldo.up.railway.app/).|
-| Monitoring | Model dipantau kinerjanya dengan menggunakan Prometheus dan Grafana. Prometheus bertugas mengumpulkan data dan metrik dari model secara real-time namun terdapat juga visualisasi sederhana, sedangkan Grafana membantu  melihat semua informasi tersebut dalam bentuk dashboard yang mudah dipahami. Akses ke [Monitoring Metrics](https://mlops-bc-mkavaldo.up.railway.app/monitoring/prometheus/metrics). |
+| Performa model  |  Hasil evaluasi model setelah tuning menunjukkan akurasi **97.5%** pada pelatihan dan **99%** pada data validasi. Loss yang diperoleh adalah **0.0759** selama pelatihan dan **0.0342** pada validasi. Model menunjukkan kinerja yang sangat baik dan dapat digunakan untuk melakukan prediksi.|
+| Opsi Deployment  | Model yang sudah dibuat, project ini dideploy menggunakan Railway. Railway memiliki kemudahan dalam proses deployment dengan user friendly dan dukungan untuk berbagai teknologi. Selain bisa juga dideploy dengan menggunakan heroku, namun untuk menggunakan heroku harus subscribe. |
+| Web App | Menggunkan Flask untuk web aplikasi serta deploy model menggunakan Railwal. Akses pada link berikut: [Breast Prediction App](https://bc-prediction-app-mkavaldo.up.railway.app/) / [Metadata Model](https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/metadata).|
+| Monitoring | Model dipantau kinerjanya dengan menggunakan Prometheus dan Grafana. Prometheus bertugas mengumpulkan data dan metrik dari model secara real-time namun terdapat juga visualisasi sederhana, sedangkan Grafana membantu  melihat semua informasi tersebut dalam bentuk dashboard yang mudah dipahami. Dari hasil monitoring, didapati hampir mencapai 1000 (1k) request yang berarti baik dari web app maupun dilakukan testing dengan file `testing.ipynb` mampu menerima request dan mengembalikan respon untuk menghasilkan prediksi yang ditampilkan pada grafik visualisasi. Akses ke [Monitoring Metrics](https://mlops-bc-mkavaldo.up.railway.app/monitoring/prometheus/metrics). |
 
 
 
 ## Deployment Model on Railway
 
-Untuk melakukan deployment model yang telah dibuat yaitu dengan menggunakan Railway. Selain itu digunakan Prometheus dan Grafana untuk menampilkan visualisasi hasil monioring. Unduh terlebih dahulu [Railway CLI]() dan [Grafana](https://grafana.com/grafana/download?platform=windows) serta lakukan proses instalasi. 
+Untuk melakukan deployment model yang telah dibuat yaitu dengan menggunakan Railway. Selain itu digunakan Prometheus dan Grafana untuk menampilkan visualisasi hasil monioring. Unduh terlebih dahulu [Railway CLI](https://docs.railway.app/quick-start) dan [Grafana](https://grafana.com/grafana/download?platform=windows) serta lakukan proses instalasi. 
 
 
 ### Membuat file yang diperlukan:
@@ -114,7 +118,8 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     ```
     Jika berhasil akan muncul seperti ini:
    
-   ![mkavaldo-metadata](https://github.com/user-attachments/assets/2a62b086-702c-41e9-a5e9-1f67652d9030)
+   <!-- ![mkavaldo-metadata](https://github.com/user-attachments/assets/2a62b086-702c-41e9-a5e9-1f67652d9030) -->
+   <img width="572" alt="mkavaldo-metadata" src="https://github.com/user-attachments/assets/2a62b086-702c-41e9-a5e9-1f67652d9030">
 
 
 3. Monitoring
@@ -123,24 +128,25 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     ```
     Jika berhasil akan muncul seperti ini:
 
-   ![mkavaldo-metrics](https://github.com/user-attachments/assets/2e2b17d4-8d6b-4d34-8601-301ead46b250)
+   <!-- ![mkavaldo-metrics](https://github.com/user-attachments/assets/2e2b17d4-8d6b-4d34-8601-301ead46b250) -->
+   <img width="572" alt="mkavaldo-metrics" src="https://github.com/user-attachments/assets/2e2b17d4-8d6b-4d34-8601-301ead46b250">
 
 
 ### Monitoring in Prometheus
 
 1. Membuka CMD dan run beberapa command berikut:
     ```bash
-    docker build -t bc-monitoring
-    docker run -p  bc-monitoring
+    docker build -t bc-monitoring .\monitoring\
+    docker run -p 9090:9090 cc-monitoring
     ```
 2. Salin link berikut ke browser:
     ```
     http://localhost:9090/
     ```
-    ![mkavaldo-prometheus](https://github.com/user-attachments/assets/7b92c92d-f995-49a7-99d1-b7117b7d99de)
-   <img width="945" alt="mkavaldo-monitoring-prometheus" src="https://github.com/user-attachments/assets/e7de6c63-eee7-4c59-92a5-8a787cfc66f1">
 
+3. Hasil tampilan pada Prometheus.
 
+    <img width="945" alt="mkavaldo-monitoring-prometheus" src="https://github.com/user-attachments/assets/e7de6c63-eee7-4c59-92a5-8a787cfc66f1">
 
 ### Monitoring Grafana
 1. Pastikan sudah dilakukan instalasi pada tahap sebelumnya, _copy paste_ link berikut dan buka pada browser.
@@ -161,11 +167,8 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
 
 5. Klik tombol **Save & Test** dan memilih metrik yang akan ditampilkan.
 6. Hasil tampilan pada Grafana.
-  
+
    <img width="959" alt="mkavaldo-monitoring-grafana" src="https://github.com/user-attachments/assets/be11be09-d52b-4e34-96b5-09b932d8e2d7">
-
-
-<!-- ![mkavaldo-grafana](https://github.com/user-attachments/assets/99826375-6762-414f-aa32-b8161e98d14e)-->
 
 
 
