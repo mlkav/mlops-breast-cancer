@@ -138,6 +138,8 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
     http://localhost:9090/
     ```
     ![mkavaldo-prometheus](https://github.com/user-attachments/assets/7b92c92d-f995-49a7-99d1-b7117b7d99de)
+   <img width="945" alt="mkavaldo-monitoring-prometheus" src="https://github.com/user-attachments/assets/e7de6c63-eee7-4c59-92a5-8a787cfc66f1">
+
 
 
 ### Monitoring Grafana
@@ -159,8 +161,9 @@ Copy paste url berikut ke browser untuk melihat metadata dan monitoring:
 
 5. Klik tombol **Save & Test** dan memilih metrik yang akan ditampilkan.
 6. Hasil tampilan pada Grafana.
+  
+   <img width="959" alt="mkavaldo-monitoring-grafana" src="https://github.com/user-attachments/assets/be11be09-d52b-4e34-96b5-09b932d8e2d7">
 
-   <img width="960" alt="mkavaldo-grafana" src="https://github.com/user-attachments/assets/8ccbbcc9-82e1-4593-a148-46aa3b187fc0">
 
 <!-- ![mkavaldo-grafana](https://github.com/user-attachments/assets/99826375-6762-414f-aa32-b8161e98d14e)-->
 
