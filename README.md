@@ -184,7 +184,7 @@ Melakukan prediksi pada data sample dengan menentukan index tertentu.
 - Pada file ini juga bisa melakukan _request_ dengan jumlah tertentu agar dapat terlihat perbedaan pada grafik monitoring.
 
 
-# Referensi:
+<!-- # Referensi: -->
 
 [^1]: World Health Organization. "Breast Cancer Awareness and Screening Guidelines". 2024. Diakses pada 06 September 2024 melalui  [WHO: Breast Cancer](https://www.who.int/activities/preventing-cancer). 
 
