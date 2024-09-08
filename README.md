@@ -13,6 +13,8 @@ ___
 
 # Submission 2: Breast Cancer Prediction (MLOPS)
 
+![breast-cancer](https://github.com/user-attachments/assets/34f4f52d-c5b0-4b73-adcb-f25744a08e2f)
+
 
 |         | Deskripsi|
 |---------|----------|
