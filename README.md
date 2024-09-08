@@ -1,16 +1,18 @@
-*Created: 05/09/2024*
-
-[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](/mlops-breast-cancer/notebook.html)
-
+![created](https://img.shields.io/badge/created-05/09/2024-blue)
+[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](maulanakavaldo.github.io/mlops-breast-cancer/notebook.html)
+<a href="https://www.linkedin.com/in/maulana-kavaldo/" target="_blank">
+  <img src="https://img.shields.io/badge/Open_Prototype!-blue?logo=railway" alt="Prototype">
+</a>
+<a href="https://www.linkedin.com/in/maulana-kavaldo/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin" alt="LinkedIn">
+</a>
+<a href="https://www.dicoding.com/users/mkavaldo/academies" target="_blank">
+  <img src="https://img.shields.io/badge/Dicoding_Profile-blue?logo=chrome" alt="Dicoding Profile">
+</a>
 ___
 
 # Submission 2: Breast Cancer Prediction (MLOPS)
 
-Nama : Maulana Kavaldo
-
-UsernameDicoding : [mkavaldo](https://www.dicoding.com/users/mkavaldo/academies)
-
-![breast-cancer-app](https://github.com/user-attachments/assets/a8fe1e69-dd4e-427c-a41b-aa68125b855f)
 
 |         | Deskripsi|
 |---------|----------|
