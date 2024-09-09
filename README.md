@@ -1,13 +1,13 @@
 ![created](https://img.shields.io/badge/created-05/09/2024-blue)
 [![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](maulanakavaldo.github.io/mlops-breast-cancer/notebook.html)
-<a href="https://www.linkedin.com/in/maulana-kavaldo/" target="_blank">
+<a href="https://mlops-bc-mkavaldo.up.railway.app/v1/models/bc-model/metadata" target="_blank">
   <img src="https://img.shields.io/badge/Open_Prototype!-blue?logo=railway" alt="Prototype">
 </a>
 <a href="https://www.linkedin.com/in/maulana-kavaldo/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin" alt="LinkedIn">
 </a>
 <a href="https://www.dicoding.com/users/mkavaldo/academies" target="_blank">
-  <img src="https://img.shields.io/badge/Dicoding_Profile-blue?logo=chrome" alt="Dicoding Profile">
+  <img src="https://img.shields.io/badge/Dicoding_Profile-blue?logo=browser" alt="Dicoding Profile">
 </a>
 
 ___
@@ -15,7 +15,6 @@ ___
 # Breast Cancer Prediction (MLOPS)
 
 ![breast-cancer](https://github.com/user-attachments/assets/34f4f52d-c5b0-4b73-adcb-f25744a08e2f)
-
 
 |         | Deskripsi|
 |---------|----------|
