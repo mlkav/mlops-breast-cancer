@@ -1,5 +1,5 @@
 ![created](https://img.shields.io/badge/created-05/09/2024-blue)
-[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://maulanakavaldo.github.io/mlops-breast-cancer/notebook.html)
+[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://mlkav.github.io/mlops-breast-cancer/notebook.html)
 <a href="https://bc-prediction-app-mkavaldo.up.railway.app/" target="_blank">
   <img src="https://img.shields.io/badge/Open_Prototype!-blue?logo=railway" alt="Prototype">
 </a>
