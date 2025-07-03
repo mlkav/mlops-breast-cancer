@@ -6,7 +6,7 @@
 <a href="https://www.linkedin.com/in/maulana-kavaldo/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin" alt="LinkedIn">
 </a>
-<a href="https://www.dicoding.com/users/mkavaldo/academies" target="_blank">
+<a href="https://www.dicoding.com/mentoring" target="_blank">
   <img src="https://img.shields.io/badge/Dicoding_Profile-blue?logo=browser" alt="Dicoding Profile">
 </a>
 
